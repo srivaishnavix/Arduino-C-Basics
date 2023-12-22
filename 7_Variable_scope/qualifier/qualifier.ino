@@ -1,12 +1,12 @@
 //qualifiers are of two types- constant and static
 //constant qualifier - const is the keyword
 #define pie 3.1459 //c++ concepet
-const float pi = 3.14;//constant variables cannot be alteresd, the value of the variable cannot be changed
+const float pi = 3.14;//constant variables cannot be altered, the value of the variable cannot be changed
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   //pi = pi-0.14;//throws an error exit status 1 ; assignment of read-only variable 'pi'
-  //pi++; //increment of read-only variable 'pi'
+  //pi++; //increment of read-only variable 'pi' error
   
   Serial.println(pi);
   
