@@ -1,12 +1,16 @@
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  if (true){//make this false to get else statement
-    Serial.println("My if statement");
+  if(false){
+    Serial.println("If statement");
+  }
+  else if (true){
+    Serial.println("Else if statement");
   }
   else {
-  Serial.println("My else statement");
+    Serial.println("Else statement");
   }
+
 }
 
 void loop() {
