@@ -4,8 +4,8 @@
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  for( int i =0; i!=5; i++){
-    Serial.println(i + ") Hello");
+  for( int i = 0; i!=5; i++){//will run 5 times 0-4
+    Serial.println(String(i+1) + ") Hello");
   }
   
   
