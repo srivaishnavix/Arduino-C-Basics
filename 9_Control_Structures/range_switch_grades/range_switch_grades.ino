@@ -2,7 +2,7 @@
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  int marks = 45;
+  int marks = 79;
   switch (marks) {
     case 0 ... 39://3 dots can be used for range
       Serial.println("F");break;
