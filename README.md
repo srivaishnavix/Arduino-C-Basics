@@ -12,4 +12,5 @@ Blinking LED experiment
 
 <br/>
 ![image](https://github.com/srivaishnavix/Arduino-C-Basics/assets/73235170/e0302e12-42d1-42cf-ab22-9d32ee5c2b4e)
+
 Operating LED with a push button
