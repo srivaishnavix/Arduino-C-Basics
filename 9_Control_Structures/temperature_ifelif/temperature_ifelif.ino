@@ -1,7 +1,6 @@
-int temperature = 0;
-
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(9600);
   pinMode(6,OUTPUT);
   pinMode(7,OUTPUT);
   pinMode(8,OUTPUT);
@@ -9,6 +8,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  int temperature = Serial.read();
   if (temperature<50 && temperature>10){
     digitalWrite(6,HIGH);
     delay(500);
