@@ -8,25 +8,29 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int temperature = Serial.read();
-  if (temperature<50 && temperature>10){
+  int temperature = Serial.parseInt();
+  if (temperature>=32){
     digitalWrite(6,HIGH);
     delay(500);
     digitalWrite(6,LOW);
     delay(500);
   }
-  else if (temperature>50 && temperature<70){
+  else if (temperature>20 && temperature<32){
     digitalWrite(7,HIGH);
     delay(500);
     digitalWrite(7,LOW);
     delay(500);
     
   }
-  else{
+  else if (temperature<=20){
     digitalWrite(8,HIGH);
     delay(500);
     digitalWrite(8,LOW);
     delay(500);
   }
+  else{
+    return;
+  }
+  
 
 }
